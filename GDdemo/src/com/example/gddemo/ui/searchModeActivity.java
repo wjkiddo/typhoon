@@ -29,39 +29,7 @@ public class searchModeActivity extends Activity implements OnClickListener,
 
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_searchmode);
-		searchByDate = (CheckBox) findViewById(R.id.checkBox_searchByDate);
-		searchByName = (CheckBox) findViewById(R.id.checkBox_searchByName);
-		selectAll = (CheckBox) findViewById(R.id.checkBox_selectAll);
-		ok = (Button) findViewById(R.id.button_ok);
-		buttonName = (Button) findViewById(R.id.buttonName);
-		ok.setOnClickListener(searchModeActivity.this);
-		buttonName.setOnClickListener(searchModeActivity.this);
-		searchByDate.setOnCheckedChangeListener(searchModeActivity.this);
-		searchByName.setOnCheckedChangeListener(searchModeActivity.this);
-		selectAll.setOnCheckedChangeListener(searchModeActivity.this);
-
-		// 导入数据库至/data/data/包名/databases
-		new Thread(new Runnable() {
-
-			@Override
-			public void run() {
-				// TODO Auto-generated method stub
-				try {
-					putDBFromAssets("typhoon.db");
-					putDBFromAssets("typhoonSet.db");
-					putDBFromAssets("typhoon.db-journal");
-					putDBFromAssets("typhoonSet.db-journal");
-
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-					throw new RuntimeException();
-				}
-			}
-
-		}).start();
+		
 
 	}
 
