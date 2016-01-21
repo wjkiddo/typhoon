@@ -29,7 +29,7 @@ public class searchModeActivity extends Activity implements OnClickListener,
 
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
-		
+		sdfsdfsdfsdfsd
 
 	}
 
